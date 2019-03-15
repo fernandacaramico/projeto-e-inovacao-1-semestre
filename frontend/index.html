@@ -2,256 +2,88 @@
 <html lang='en'>
 
 <head>
-    <!--Importa Google Icon Font-->
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!--Importa materialize.css-->
-    <link type='text/css' rel='stylesheet' href='css/materialize.min.css' media='screen,projection' />
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Site Institucional</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
-        .home{
-            background: linear-gradient(
-                rgba(0, 0, 0, 0.7), 
-                rgba(0, 0, 0, 0.7)
-            ), url('https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
-            background-position: center top;
-            width: 100%;
-            height: 100vh;
-            padding: 78px 5%;
-            color: white;
-            box-sizing: border-box;
-        }
-
-        .home .title {
-            width: 70%;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 72px;
-            line-height: normal;
-        }
-
-        .home .phrase {      
-            width: 50%;      
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: normal;
-        }
-
-        .diagram{
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .diagram .title {
-            text-align: center;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 72px;
-            line-height: normal;
-            text-align: center;
-        }
-
-        .diag-card{
-            width: 100%;
-        }
-        .diag-card::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .diag-card-img{
-            width: 25%;
-            height: 300px;
-            float: left;
-            background: url('https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-position: center;
-            background-size: auto 100%;
-        }
-
-        .diag-card-desc{
-            padding-left: 60px;
-            width: 75%;
-            float: left;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: normal;
-            text-align: justify;
-            color: #666;
-        }
-
-        .diag-card-title{
-            text-align: right;            
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 48px;
-            line-height: normal;
-            text-align: right;
-        }
-
-        .marketing{
-            background: linear-gradient(
-                rgba(0, 0, 0, 0.7), 
-                rgba(22, 17, 17, 0.7)
-            ), url('https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?cs=srgb&dl=business-camera-coffee-1509428.jpg&fm=jpg') no-repeat;
-            background-position: center center;
-            background-size: 100%;
-            width: 100%;
-            padding: 16px;
-            padding-bottom: 46px;
-            color: white;
-            box-sizing: border-box;
-        }
-
-        .marketing-cont{
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        .marketing-title{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 48px;
-            line-height: normal;
-            text-align: center;
-        }
-
-        .marketing-desc{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: normal;
-            text-align: justify;
-            color: #ebebeb;
-        }
-
-        .marketing-btn{ 
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        .footer-form{
-            background: #2979FF;
-            padding: 26px;
-        }
-
-        .footer-form::after{
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .footer-credits{
-            background: #1C54B2;
-            text-align: center;
-            padding: 26px;
-            color: wheat;
-        }
-        
-        .footer-form-text{
-            float: left;
-            padding-top: 18px;
-            width: 50%;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: normal;
-            color: wheat;
-        }
-
-        .footer-form-actual, .footer-form-actual .helper-text{
-            float: left;
-            width: 50%;
-            color: wheat;
-        }
-
-        .footer-form-actual .input-field{
-            width: 30%;
-            color: wheat;
-        }
-
-        .btn-flat{
-            color: wheat;
-        }
-    </style>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<title>Site Institucional</title>
+	<!--Importa materialize.css-->
+	<link type='text/css' rel='stylesheet' href='css/materialize.min.css' media='screen,projection' />
+	<!-- Estilização -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!--Importa Google Icon Font-->
+	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+	<nav>
+		<div class="navbar-fixed">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">CimenTool</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="pages/signup.html">Cadastro</a></li>
+					<li><a href="pages/login.html" class='login-btn'>Entrar</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-    <section class='home'>
-        <h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
-        <p class='phrase'>
-            Somos especialistas em soluções para Internet das Coisas (IoT). Ajudamos empresas a terem as informações
-            certas
-            sobre o que é importante para elas, em qualquer lugar e a qualquer momento
-        </p>
-        <a href='#' class='waves-effect waves-light btn-large btn'>Fale com um especialista</a>
-        <a href='#' class='btn-flat btn-large btn'>Conheça nossas soluções</a>
-    </section>
+	<section class='home'>
+		<h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
+		<p class='phrase'>
+			Somos especialistas em soluções para Internet das Coisas (IoT). Ajudamos empresas a terem as informações
+			certas
+			sobre o que é importante para elas, em qualquer lugar e a qualquer momento
+		</p>
+		<a href='#' class='waves-effect waves-light btn-large btn'>Fale com um especialista</a>
+		<a href='#diagram' class='btn-flat btn-large btn'>Conheça nossas soluções</a>
+	</section>
 
-    <section class='diagram'>
-        <h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
-        <div class='diag-card'>
-            <div class='diag-card-img'>
-            </div>
-            <div class='diag-card-cont'>
-                <p class='diag-card-title'>Você presente em seu negócio mesmo fora dele</p>
-                <p class='diag-card-desc'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the
-                    industry's standard dummy text ever since the 1500s
-                </p>
-            </div>
-        </div>
-    </section>
+	<section class='diagram' id='diagram'>
+		<h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
+		<div class='diag-card'>
+			<div class='diag-card-img'>
+			</div>
+			<div class='diag-card-cont'>
+				<p class='diag-card-title'>Você presente em seu negócio mesmo fora dele</p>
+				<p class='diag-card-desc'>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+					the
+					industry's standard dummy text ever since the 1500s
+				</p>
+			</div>
+		</div>
+	</section>
 
-    <section class='marketing'>
-        <div class='marketing-cont'>
-            <h2 class='marketing-title'>Você presente em seu negócio mesmo fora dele</h2>
-            <p class='marketing-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the
-                industry's standard dummy text ever since the 1500s</p>
+	<section class='marketing'>
+		<div class='marketing-cont'>
+			<h2 class='marketing-title'>Você presente em seu negócio mesmo fora dele</h2>
+			<p class='marketing-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+				Ipsum has been the
+				industry's standard dummy text ever since the 1500s</p>
 
-            <!-- CENTRALIZAR -->
-            <a href='#' class='waves-effect waves-light btn-large btn marketing-btn'>Fale com um especialista</a>
-        </div>
-    </section>
+			<!-- CENTRALIZAR -->
+			<a href='#' class='waves-effect waves-light btn-large btn marketing-btn'>Fale com um especialista</a>
+		</div>
+	</section>
 
-    <footer class='footer'>
-        <div class='footer-form'>
-            <div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
-            <form class='footer-form-actual'>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <input id="email" type="email" class="validate" placeholder='Ex. roberto@email.com'>
-                    <span class="helper-text" data-error="wrong" data-success="right">Seu email</span>
-                    <button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
-                </div>
-                <!-- Mudar cor -->
-            </form>
-        </div>
-        <div class='footer-credits'>
-            CimenTool © - 2019
-        </div>
-    </footer>
+	<footer class='footer'>
+		<div class='footer-form'>
+			<div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
+			<form class='footer-form-actual'>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">mode_edit</i>
+					<input name="email" type="email" class="validate" placeholder='Ex. roberto@email.com' required>
+					<span class="helper-text" data-error="wrong" data-success="right">Seu email</span>
+				</div>
+					<button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
+				<!-- Mudar cor -->
+			</form>
+		</div>
+		<div class='footer-credits'>
+			CimenTool © - 2019
+		</div>
+	</footer>
 </body>
 
 </html>

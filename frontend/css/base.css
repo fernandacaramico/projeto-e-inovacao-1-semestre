@@ -1,0 +1,207 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Navbar*/
+
+.nav-wrapper{
+    background: #333;
+}
+
+.brand-logo{
+    margin-left: 16px;
+}
+
+.login-btn{
+    background-color: #2979FF;
+}
+
+/*Home*/
+
+.home{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ), url('https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100vh;
+    padding: 78px 5%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.home .title {
+    width: 70%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: normal;
+}
+
+.home .phrase {      
+    width: 50%;      
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.diagram{
+    width: 90%;
+    margin: 36px auto;
+}
+
+.diagram .title {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: normal;
+    text-align: center;
+}
+
+.diag-card{
+    width: 100%;
+}
+.diag-card::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.diag-card-img{
+    width: 25%;
+    height: 300px;
+    float: left;
+    background: url('https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.diag-card-desc{
+    padding-left: 60px;
+    width: 75%;
+    float: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: normal;
+    text-align: justify;
+    margin-top: 16px;
+    color: #666;
+}
+
+.diag-card-title{
+    text-align: right;            
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: normal;
+    text-align: right;
+}
+
+.marketing{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(22, 17, 17, 0.7)
+    ), url('https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?cs=srgb&dl=business-camera-coffee-1509428.jpg&fm=jpg') no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
+    padding: 16px;
+    padding-bottom: 46px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.marketing-cont{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.marketing-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: normal;
+    text-align: center;
+}
+
+.marketing-desc{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: normal;
+    text-align: justify;
+    color: #ebebeb;
+    margin-bottom: 16px;
+}
+
+.marketing-btn{ 
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer .btn{
+    margin-top: 22px;
+}
+
+.footer-form{
+    background: #2979FF;
+    padding: 26px;
+}
+
+.footer-form::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-credits{
+    background: #1C54B2;
+    text-align: center;
+    padding: 26px;
+    color: wheat;
+}
+
+.footer-form-text{
+    float: left;
+    padding-top: 18px;
+    width: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: normal;
+    color: wheat;
+}
+
+.footer-form-actual, .footer-form-actual .helper-text{
+    float: left;
+    width: 50%;
+    color: wheat;
+}
+
+.footer-form-actual .input-field, .footer-form-actual .input-field input{
+    float: left;
+    width: 70%;
+    color: wheat;
+    margin-right: 50px;
+}
+
+.btn-flat{
+    color: wheat;
+}
