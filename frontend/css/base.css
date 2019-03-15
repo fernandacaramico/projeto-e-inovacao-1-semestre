@@ -202,6 +202,12 @@
     margin-right: 50px;
 }
 
+/* Comum */
+
 .btn-flat{
     color: wheat;
+}
+
+.fullwidth{
+    width: 100%;
 }

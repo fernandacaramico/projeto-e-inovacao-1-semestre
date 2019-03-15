@@ -1,62 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='pt-br'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-	<!--Importa materialize.css-->
-	<link type='text/css' rel='stylesheet' href='../css/materialize.min.css' media='screen,projection' />
-	<!-- Estilização -->
-	<link rel="stylesheet" type="text/css" href="../css/base.css">
-	<!--Importa Google Icon Font-->
-	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Entrar</title>
+    <!--Importa materialize.css-->
+    <link type='text/css' rel='stylesheet' href='../css/materialize.min.css' media='screen,projection' />
+    <!-- Estilização -->
+    <link rel='stylesheet' type='text/css' href='../css/base.css'>
+    <!--Importa Google Icon Font-->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
+
 <body>
     <nav>
-		<div class="navbar-fixed">
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">CimenTool</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="pages/signup.html">Cadastro</a></li>
-					<li><a href="pages/login.html" class='login-btn'>Entrar</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+        <div class='navbar-fixed'>
+            <div class='nav-wrapper'>
+                    <a href='../index.html' class='brand-logo'>CimenTool</a>
+                <ul id='nav-mobile' class='right hide-on-med-and-down'>
+                    <li><a href='signup.html'>Cadastro</a></li>
+                    <li><a href='login.html' class='login-btn'>Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<section class='diagram' id='diagram'>
-		<h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
-		<div class='diag-card'>
-			<div class='diag-card-img'>
-			</div>
-			<div class='diag-card-cont'>
-				<p class='diag-card-title'>Você presente em seu negócio mesmo fora dele</p>
-				<p class='diag-card-desc'>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-					the
-					industry's standard dummy text ever since the 1500s
-				</p>
-			</div>
-		</div>
-	</section>
-	<footer class='footer'>
-		<div class='footer-form'>
-			<div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
-			<form class='footer-form-actual'>
-				<div class="input-field col s6">
-					<i class="material-icons prefix">mode_edit</i>
-					<input name="email" type="email" class="validate" placeholder='Ex. roberto@email.com' required>
-					<span class="helper-text" data-error="wrong" data-success="right">Seu email</span>
-				</div>
-					<button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
-				<!-- Mudar cor -->
-			</form>
-		</div>
-		<div class='footer-credits'>
-			CimenTool © - 2019
-		</div>
-	</footer>
+    <section class='diagram' id='diagram'>
+        <h1 class='title'>Entrar</h1>
+        <div class='card'>
+            <div class='card-image waves-effect waves-block waves-light'>
+                <!-- <img class='activator' src='../img/login_img.jpeg' height='200' class='materialboxed' style=''> -->
+            </div>
+            <div class='card-content'>
+                <span class='card-title activator grey-text text-darken-4'>Informe seus dados</span>
+
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class='waves-effect waves-light btn-large btn fullwidth'>Entrar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class='footer'>
+        <div class='footer-form'>
+            <div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
+            <form class='footer-form-actual'>
+                <div class='input-field col s6'>
+                    <i class='material-icons prefix'>mode_edit</i>
+                    <input name='email' type='email' class='validate' placeholder='Ex. roberto@email.com' required>
+					<span class="helper-text">Seu email</span>
+                </div>
+                <button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
+                <!-- Mudar cor -->
+            </form>
+        </div>
+        <div class='footer-credits'>
+            CimenTool © - 2019
+        </div>
+    </footer>
+    <script src='../js/materialize.min.js'></script>
 </body>
+
 </html>
