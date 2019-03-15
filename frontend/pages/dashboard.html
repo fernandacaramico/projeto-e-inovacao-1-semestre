@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Visão Geral</title>
+    <!--Importa materialize.css-->
+    <link type='text/css' rel='stylesheet' href='../css/materialize.min.css' media='screen,projection' />
+    <!-- Estilização -->
+    <link rel='stylesheet' type='text/css' href='../css/base.css'>
+    <!--Importa Google Icon Font-->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <div class='navbar-fixed'>
+            <nav>
+                <div class='nav-wrapper'>
+                    <a href='../index.html' class='brand-logo'>CimenTool</a>
+                    <ul id='nav-mobile' class='right hide-on-med-and-down'>
+                        <li>
+                            <a href='signup.html'>Cadastro</a>
+                        </li>
+                        <li>
+                            <a href='login.html' class='login-btn'>Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <section class='diagram' id='diagram'>
+        <h1 class='title'>Visão Geral</h1>
+        <form class='col s12'>
+            <div class='input-field col s12'>
+                <select class='browser-default'>
+                    <option value='' disabled selected>Selecione seu sensor</option>
+                    <option value='1'>Sensor 1</option>
+                    <option value='2'>Sensor 2</option>
+                    <option value='3'>Sensor 3</option>
+                </select>
+            </div>
+        </form>
+        <div class='row'>
+            <div class='col s12 m3'>
+                <div class='card light-green darken-1'>
+                    <div class='card-content white-text'>
+                        <span class='card-title'>Temperatura</span>
+                        <p>O valor atual do sensor é: X</p>
+                    </div>
+                    <div class='card-action'>
+                        <!-- <a href='#'>Link</a>
+                            <a href='#'>Link</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class='col s12 m3'>
+                <div class='card light-blue darken-1'>
+                    <div class='card-content white-text'>
+                        <span class='card-title'>Umidade</span>
+                        <p>O valor atual do sensor é: Y</p>
+                    </div>
+                    <div class='card-action'>
+                        <!-- <a href='#'>Link</a>
+                            <a href='#'>Link</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class='col s12 m3'>
+                <div class='card purple darken-1'>
+                    <div class='card-content white-text'>
+                        <span class='card-title'>Ideal para</span>
+                        <p>O dia de hoje é ideal para: Z</p>
+                    </div>
+                    <div class='card-action'>
+                        <!-- <a href='#'>Link</a>
+                            <a href='#'>Link</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class='col s12 m3'>
+                <div class='card red darken-1'>
+                    <div class='card-content white-text'>
+                        <span class='card-title'>Não recomendado</span>
+                        <p>Hoje não é um bom dia para: A</p>
+                    </div>
+                    <div class='card-action'>
+                        <!-- <a href='#'>Link</a>
+                            <a href='#'>Link</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col s12 m6'>
+                <img src='../img/graph.png' alt='Gráfico temporário' width='100%'>
+            </div>
+            <div class='col s12 m6'>
+                <img src='../img/graph.png' alt='Gráfico temporário' width='100%'>
+            </div>
+        </div>
+        <div class='row'>
+            <form class='col s12' action='dashboard.html'>
+                <div class='col s6'></div>
+                <div class='input-field col s3'>
+                    De:
+                    <input type='date' name='from' id='from'>
+                </div>
+                <div class='input-field col s3'>
+                    Até:
+                    <input type='date' name='to' id='to'>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Temperatura</th>
+                        <th>Umidade</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>18/02/2018</td>
+                        <td>12:30</td>
+                        <td>26ºC</td>
+                        <td>21 kg/m³</td>
+                        <td>Verificado</td>
+                    </tr>
+                    <tr>
+                        <td>18/02/2018</td>
+                        <td>13:30</td>
+                        <td>21ºC</td>
+                        <td>22 kg/m³</td>
+                        <td>Previsão</td>
+                    </tr>
+                    <tr>
+                        <td>18/02/2018</td>
+                        <td>16:30</td>
+                        <td>22ºC</td>
+                        <td>22 kg/m³</td>
+                        <td>Previsão</td>
+                    </tr>
+                    <tr>
+                        <td>18/02/2018</td>
+                        <td>18:30</td>
+                        <td>23ºC</td>
+                        <td>22 kg/m³</td>
+                        <td>Previsão</td>
+                    </tr>
+                    <tr>
+                        <td>18/02/2018</td>
+                        <td>23:30</td>
+                        <td>22ºC</td>
+                        <td>22 kg/m³</td>
+                        <td>Previsão</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class='footer-credits'>
+            CimenTool © - 2019
+        </div>
+    </footer>
+    <script src='../js/materialize.min.js'></script>
+</body>
+
+</html>

@@ -211,3 +211,7 @@
 .fullwidth{
     width: 100%;
 }
+
+.brand-logo{
+    text-align: left !important;
+}

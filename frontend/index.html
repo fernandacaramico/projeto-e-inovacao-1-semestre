@@ -5,37 +5,42 @@
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
-	<title>Site Institucional</title>
+	<title>Cimentool</title>
 	<!--Importa materialize.css-->
 	<link type='text/css' rel='stylesheet' href='css/materialize.min.css' media='screen,projection' />
 	<!-- Estilização -->
-	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel='stylesheet' type='text/css' href='css/base.css'>
 	<!--Importa Google Icon Font-->
 	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
 	<nav>
-		<div class="navbar-fixed">
-			<div class="nav-wrapper">
-				<a href='index.html' class='brand-logo'>CimenTool</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="pages/signup.html">Cadastro</a></li>
-					<li><a href="pages/login.html" class='login-btn'>Entrar</a></li>
-				</ul>
-			</div>
+		<div class='navbar-fixed'>
+			<nav>
+				<div class='nav-wrapper'>
+					<a href='index.html' class='brand-logo'>CimenTool</a>
+					<ul id='nav-mobile' class='right hide-on-med-and-down'>
+						<li>
+							<a href='pages/signup.html'>Cadastro</a>
+						</li>
+						<li>
+							<a href='pages/login.html' class='login-btn'>Entrar</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 	</nav>
 
 	<section class='home'>
 		<h1 class='title'>Você presente em seu negócio mesmo fora dele</h1>
 		<p class='phrase'>
-			Somos especialistas em soluções para Internet das Coisas (IoT). Ajudamos empresas a terem as informações
-			certas
-			sobre o que é importante para elas, em qualquer lugar e a qualquer momento
+			Somos especialistas em soluções para Internet das Coisas (IoT). Ajudamos empresas a terem as informações certas sobre o que
+			é importante para elas, em qualquer lugar e a qualquer momento
 		</p>
-		<a href='#' class='waves-effect waves-light btn-large btn'>Fale com um especialista</a>
+		<a href='pages/signup.html' class='waves-effect waves-light btn-large btn'>Fale com um especialista</a>
 		<a href='#diagram' class='btn-flat btn-large btn'>Conheça nossas soluções</a>
 	</section>
 
@@ -47,9 +52,8 @@
 			<div class='diag-card-cont'>
 				<p class='diag-card-title'>Você presente em seu negócio mesmo fora dele</p>
 				<p class='diag-card-desc'>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-					the
-					industry's standard dummy text ever since the 1500s
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+					text ever since the 1500s
 				</p>
 			</div>
 		</div>
@@ -58,23 +62,21 @@
 	<section class='marketing'>
 		<div class='marketing-cont'>
 			<h2 class='marketing-title'>Você presente em seu negócio mesmo fora dele</h2>
-			<p class='marketing-desc'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-				Ipsum has been the
-				industry's standard dummy text ever since the 1500s</p>
-
-			<!-- CENTRALIZAR -->
-			<a href='#' class='waves-effect waves-light btn-large btn marketing-btn'>Fale com um especialista</a>
+			<p class='marketing-desc'>Somos especialistas em soluções para Internet das Coisas (IoT). Ajudamos empresas a terem as informações certas sobre o que é importante para elas, em qualquer lugar e a qualquer momento</p>
+			<a href='pages/signup.html' class='waves-effect waves-light btn-large btn marketing-btn'>Fale com um especialista</a>
 		</div>
 	</section>
 
 	<footer class='footer'>
 		<div class='footer-form'>
-			<div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
+			<div class='footer-form-text'>
+				<span>Assine nossos artigos por email!</span>
+			</div>
 			<form class='footer-form-actual'>
-				<div class="input-field col s6">
-					<i class="material-icons prefix">mode_edit</i>
-					<input name="email" type="email" class="validate" placeholder='Ex. roberto@email.com' required>
-					<span class="helper-text">Seu email</span>
+				<div class='input-field col s6'>
+					<i class='material-icons prefix'>mode_edit</i>
+					<input name='email' type='email' class='validate' placeholder='Ex. roberto@email.com' required>
+					<span class='helper-text'>Seu email</span>
 				</div>
 				<button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
 				<!-- Mudar cor -->
@@ -84,6 +86,13 @@
 			CimenTool © - 2019
 		</div>
 	</footer>
+
+	<!-- Botão flutuante para mensagens/chat -->
+	<div class='fixed-action-btn'>
+		<a class='btn-floating btn-large red'>
+			<i class='large material-icons'>message</i>
+		</a>
+	</div>
 	<script src='js/materialize.min.js'></script>
 </body>
 

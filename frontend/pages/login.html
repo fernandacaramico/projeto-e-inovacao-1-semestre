@@ -18,13 +18,19 @@
 <body>
     <nav>
         <div class='navbar-fixed'>
-            <div class='nav-wrapper'>
+            <nav>
+                <div class='nav-wrapper'>
                     <a href='../index.html' class='brand-logo'>CimenTool</a>
-                <ul id='nav-mobile' class='right hide-on-med-and-down'>
-                    <li><a href='signup.html'>Cadastro</a></li>
-                    <li><a href='login.html' class='login-btn'>Entrar</a></li>
-                </ul>
-            </div>
+                    <ul id='nav-mobile' class='right hide-on-med-and-down'>
+                        <li>
+                            <a href='signup.html'>Cadastro</a>
+                        </li>
+                        <li>
+                            <a href='login.html' class='login-btn'>Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </nav>
 
@@ -37,35 +43,40 @@
             <div class='card-content'>
                 <span class='card-title activator grey-text text-darken-4'>Informe seus dados</span>
 
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
+                <form class='col s12' action='dashboard.html'>
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input id='email' type='email' class='validate'>
+                            <label for='email'>Email</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
-                            <label for="password">Senha</label>
+                    <div class='row'>
+                        <div class='input-field col s12'>
+                            <input id='password' type='password' class='validate'>
+                            <label for='password'>Senha</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <button type="submit" class='waves-effect waves-light btn-large btn fullwidth'>Entrar</a>
+                    <div class='row'>
+                        <button type='submit' class='waves-effect waves-light btn-large btn fullwidth'>Entrar</a>
                     </div>
                 </form>
+            </div>
+            <div class='card-action'>
+                <a href='forgotpassword.html' class='darken-1 black-text'>Esqueceu sua senha?</a>
             </div>
         </div>
 
     </section>
     <footer class='footer'>
         <div class='footer-form'>
-            <div class='footer-form-text'><span>Assine nossos artigos por email!</span></div>
+            <div class='footer-form-text'>
+                <span>Assine nossos artigos por email!</span>
+            </div>
             <form class='footer-form-actual'>
                 <div class='input-field col s6'>
                     <i class='material-icons prefix'>mode_edit</i>
                     <input name='email' type='email' class='validate' placeholder='Ex. roberto@email.com' required>
-					<span class="helper-text">Seu email</span>
+                    <span class='helper-text'>Seu email</span>
                 </div>
                 <button href='#' class='waves-effect waves-light btn-large btn'>Assinar!</button>
                 <!-- Mudar cor -->
