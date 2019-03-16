@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema Financeiro</title>
+
+    <style>
+        body {
+            font-family: BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", sans-serif;
+            font-weight: 200;
+        }
+
+        input{
+            background-color: #000000;
+            color: #ffffff;
+            margin: 10px 0px;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        input::placeholder{
+            color: red;
+            font-style: italic;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        #div_mensagem {
+            margin-top: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        #nome, #valor {
+            width: 420px;
+            border-radius: .5rem;
+        }
+        
+        .btn {
+            border-color: transparent;
+            border-radius: .25rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Sistema financeiro da empresa</h1>
+    <div class="text-center">
+        <form>
+            <input type="text" id="nome" placeholder="Insira o nome do cliente" autofocus>
+            <br>
+            <input type="number" id="valor" placeholder="Insira o valor pago">
+            <br>
+            <button type="button" onclick="calcular()" class="btn">Somar valor</button>
+            <button type="button" onclick="exibirValor()" class="btn">Total até agora</button>
+            <div id="div_mensagem"></div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var valorTotal = 0;
+    function calcular() {
+        valorTotal = Number(valorTotal) + Number(valor.value);
+        exibirValor();
+    }
+    function exibirValor() {    
+        div_mensagem.innerHTML = `Seu valor total arrecadado é: <b>R$${valorTotal}<b>`;
+    }
+</script>
